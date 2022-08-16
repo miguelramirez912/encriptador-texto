@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f5fc;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.container {
+    display: flex;
+    width: 65vw;
+    height: 88vh;
+    margin: 0 auto;
+}
+.inicio, .resultado {
+    /* border: 1px solid black; */
+    
+}
+
+.inicio {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.inicio span{
+    align-self: flex-start;
+    margin: 1rem 0;
+    font-size: .75rem;
+    color: #495057;
+}
+.inicio span i{
+    margin-right: .5rem;    
+}
+.inicio textarea {
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #264268;
+    font-weight: initial;
+    font-size: xx-large;
+    resize: none;
+    /* border: 1px solid black; */
+}
+
+.botonera {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+
+.botonera button{
+    font-weight: normal;
+    width: 45%;
+    border: none;
+    border: 1px solid #0A3871;
+    border-radius: 1rem;
+    background-color: #0A3871;
+    color: white;
+    height: 3rem;
+}
+.botonera #desencriptar{
+    color: #0A3871;
+    background-color: #E9ECF8;
+}
+.resultado {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 1.5rem 1rem;    
+}
+
+.resultado-area {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.resultado-area .default{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.resultado-area .default img{
+    max-width: 80%;
+}
+.resultado-area .default h3{
+    color: #343A40;
+    font-size: x-large;
+}
+.resultado-area .default p{
+    color: #495057;
+    /* display: inline-block;
+    width: 90%; */
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+    .inicio, .resultado {
+        width: 100%;
+        
+    }
+    .inicio {
+        min-height: 75vh;
+    }
+    .resultado {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        padding: 0 0;
+        border-radius: 1rem;    
+    }
+    .resultado-area {
+        justify-content: center;
+    }
+    .resultado-area .default img{
+        max-width: 80%;
+        display: none;
+    }
+}
+
+@media (max-width: 420px){
+    .inicio {
+        max-height: 65vh;
+    }
+    .botonera {
+        flex-direction: column;
+    }
+
+    .botonera button{
+        width: 100%;
+        margin: .5rem;
+    }
+}

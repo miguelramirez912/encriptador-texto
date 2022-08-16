@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Encriptador de Texto</h1>
     <div class="container">
-        <textarea name="texto-inicial" id="texto-inicial" cols="30" rows="10"></textarea>
-        <div class="botonera">
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+        <div class="inicio">
+            <textarea name="texto-inicial" id="texto-inicial" placeholder="Ingrese el texto aqui." cols="30" rows="10" ></textarea>
+            <span><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos.</span>
+            <div class="botonera">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+        <div class="resultado">
+            <div class="resultado-area">
+                <div class="default">
+                    <img src="./img/1.png" alt="">
+                    <h3>Ningún mensaje fue encontrado.</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <!-- <textarea name="resultado" id="resultado" cols="30" rows="10">
+                
+            </textarea> -->
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
