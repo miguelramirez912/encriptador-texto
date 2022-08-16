@@ -21,15 +21,18 @@
         </div>
         <div class="resultado">
             <div class="resultado-area">
-                <div class="default">
+                <div id="resultado-inicial" class="default " >
                     <img src="./img/1.png" alt="">
                     <h3>Ningún mensaje fue encontrado.</h3>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
+                <div id="resultado-final" class="default" style="display: none;">
+                    <textarea name="resultado" id="resultado" cols="30" rows="10">
+                    </textarea>
+                    <button id="copiar-btn">Copiar</button>
+                </div>
             </div>
-            <!-- <textarea name="resultado" id="resultado" cols="30" rows="10">
-                
-            </textarea> -->
+            
         </div>
     </div>
     <script src="./script.js"></script>

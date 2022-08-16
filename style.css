@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body{
     background-color: #f3f5fc;
     margin: 0;
@@ -19,10 +20,6 @@ body h1{
     width: 65vw;
     height: 88vh;
     margin: 0 auto;
-}
-.inicio, .resultado {
-    /* border: 1px solid black; */
-    
 }
 
 .inicio {
@@ -53,7 +50,6 @@ body h1{
     font-weight: initial;
     font-size: xx-large;
     resize: none;
-    /* border: 1px solid black; */
 }
 
 .botonera {
@@ -96,12 +92,18 @@ body h1{
     align-items: center;
     padding: 1rem;
 }
+
 .resultado-area .default{
-    /* border: 1px solid black; */
     text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .resultado-area .default img{
-    max-width: 80%;
+    max-width: 100%;
 }
 .resultado-area .default h3{
     color: #343A40;
@@ -109,9 +111,33 @@ body h1{
 }
 .resultado-area .default p{
     color: #495057;
-    /* display: inline-block;
-    width: 90%; */
 }
+.resultado-area .default textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: x-large;
+}
+.resultado-area #resultado {
+    color: #495057;
+    line-height: 1.5;
+}
+.resultado-area button {
+    font-weight: normal;
+    width: 100%;
+    border: none;
+    border: 1px solid #0A3871;
+    border-radius: 1rem;
+    height: 3rem;
+    color: #0A3871;
+    background-color: transparent;
+}
+.hide {
+    display: none;
+}
+
 
 @media (max-width: 850px){
     .container{
