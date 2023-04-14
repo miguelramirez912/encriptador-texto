@@ -22,6 +22,14 @@ body h1{
     margin: 0 auto;
 }
 
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.95;
+}
+
 .inicio {
     width: 65%;
     display: flex;
@@ -136,6 +144,12 @@ body h1{
 }
 .hide {
     display: none;
+}
+
+.copiado {
+    background-color: #264268;
+    color: gainsboro;
+    border-color: gainsboro;
 }
 
 

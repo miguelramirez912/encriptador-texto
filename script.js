@@ -68,13 +68,26 @@ const desencriptar = (texto) => {
     textoInicial.value = '';
 }
 
+const copiar = () => {
+resultado.focus();
+  resultado.select();
+  document.execCommand('copy');
+  copiarBtn.innerText = "Copiado!!";
+  copiarBtn.style.backgroundColor = "#264268";
+  copiarBtn.style.color = "gainsboro"
+  resultado.value = "";
+  resultado.blur();
+  setTimeout(() => {
+    copiarBtn.innerText = "Copiar";
+    copiarBtn.style.backgroundColor = "transparent";
+    copiarBtn.style.color = "#0A3871"
+    
+  }, 1500);
+}
+
 // Listeners
 textoInicial.addEventListener('input', () => capturarTextoOriginal(event));
 botonEncriptar.addEventListener('click', () => encriptar(textoOriginal));
 botonDesencriptar.addEventListener('click', () => desencriptar(textoOriginal));
-copiarBtn.addEventListener('click', () => {
-  resultado.focus();
-  resultado.select();
-  document.execCommand('copy');
-});
+copiarBtn.addEventListener('click', copiar);
 
